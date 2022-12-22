@@ -1,0 +1,77 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@layer base {
+    html,
+    body {
+        @apply scroll-smooth m-0 p-0 w-full text-dark dark:text-light bg-white dark:bg-dark
+    }
+
+    svg {
+        @apply text-dark dark:text-light cursor-pointer
+    }
+}
+
+@layer utilities {
+    .layout {
+        @apply px-8 md:px-16 lg:px-40 xl:px-52 2xl:px-64
+    }
+
+    .center {
+        @apply text-center mx-auto
+    }
+
+    .flex-align-lg {
+        @apply flex flex-col lg:flex-row
+    }
+
+    .flex-align-md {
+        @apply flex flex-col md:flex-row
+    }
+
+    .hr-align-lg {
+        @apply center lg:mx-0 lg:text-left
+    }
+
+    .hr-align-md {
+        @apply center md:mx-0 md:text-left
+    }
+
+    .xl4-text {
+        font-size: clamp(3.75rem, 2.5rem + 3.125vw, 4.5rem);
+        @apply font-black leading-snug
+    }
+
+    .xl3-text {
+        font-size: clamp(3rem, 1.75rem + 3.125vw, 3.75rem);
+        @apply font-extrabold leading-snug
+    }
+
+    .xl2-text {
+        font-size: clamp(2.25rem, 1rem + 3.125vw, 3rem);
+        @apply font-bold leading-snug
+    }
+
+    .xl-text {
+        font-size: clamp(1.875rem, 1.25rem + 1.5625vw, 2.25rem);
+        @apply font-semibold leading-snug
+    }
+
+    .lg-text {
+        font-size: clamp(1.25rem, 0.8333rem + 1.0417vw, 1.5rem);
+    }
+
+    .md-text {
+        font-size: clamp(1.125rem, 0.9167rem + 0.5208vw, 1.25rem);
+    }
+
+    .sm-text {
+        font-size: clamp(1rem, 0.7917rem + 0.5208vw, 1.125rem);
+    }
+
+    .xs-text {
+        font-size: clamp(0.75rem, 0.5417rem + 0.5208vw, 0.875rem);
+        @apply tracking-wider
+    }
+}

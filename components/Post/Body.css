@@ -1,0 +1,69 @@
+h1 {
+    @apply xl4-text
+}
+
+h2 {
+    @apply xl3-text
+}
+
+h3 {
+    @apply xl2-text
+}
+
+h4 {
+    @apply xl-text
+}
+
+h5 {
+    @apply lg-text font-semibold
+}
+
+h6 {
+    @apply md-text font-semibold
+}
+
+.autolink-header {
+    @apply inline-flex ml-4
+}
+
+.visually-hidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: auto;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap;
+}
+
+.autolink-svg {
+    @apply text-main dark:text-mainDark w-8 h-8
+}
+
+p {
+    @apply sm-text
+}
+
+.toc {
+    @apply border-2 border-dark dark:border-light w-fit rounded-lg px-10 py-6 mb-12 underline underline-offset-1 text-dark dark:text-light
+}
+
+.toc-link-h1 {
+    @apply md-text relative
+}
+
+.toc-link-h1::before {
+    content: '#';
+    @apply font-semibold absolute text-main dark:text-mainDark -left-5 w-2 h-2
+}
+
+.toc-link-h2 {
+    @apply sm-text ml-5 relative
+}
+
+.toc-link-h2::before {
+    content: '-';
+    @apply font-semibold absolute -left-3.5 w-2 h-2 text-main dark:text-mainDark
+}

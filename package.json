@@ -1,6 +1,7 @@
 {
   "name": "blog",
-  "version": "0.1.0",
+  "version": "1.0.0",
+  "description": "A blog made with NextJS, TailwindCSS, rehype and remark",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -9,13 +10,18 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@tailwindcss/line-clamp": "^0.4.2",
+    "@jsdevtools/rehype-toc": "^3.0.2",
     "@next/font": "^13.0.7",
+    "@tailwindcss/line-clamp": "^0.4.2",
     "gray-matter": "^4.0.3",
-    "markdown-to-jsx": "^7.1.8",
     "next": "^13.0.7",
     "react": "^18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "react-markdown": "^8.0.4",
+    "rehype-autolink-headings": "^6.1.1",
+    "rehype-prism-plus": "^1.5.0",
+    "rehype-slug": "^5.1.0",
+    "remark-rehype": "^10.1.0"
   },
   "devDependencies": {
     "@types/node": "18.11.0",
