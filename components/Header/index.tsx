@@ -14,7 +14,7 @@ const routes = [
     {
         id: 'posts',
         route: 'posts',
-        match: /\/posts\/(.*)/
+        match: /\/posts\/?(.*)/
     }
 ]
 const Header: FC = () => {

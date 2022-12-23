@@ -1,13 +1,8 @@
-# ChatGPT
-
+# Heading
 ## Heading
-
 ### Heading
-
 #### Heading
-
 ##### Heading
-
 ###### Heading
 
 ```javascript Stupend

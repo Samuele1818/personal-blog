@@ -38,7 +38,7 @@ pre[class*="language-"] {
     padding: 1em;
     margin: .5em 0;
     overflow: auto;
-    @apply bg-white shadow-shadow dark:shadow-none dark:bg-secondaryDark rounded-lg
+    @apply bg-white shadow-shadow dark:shadow-none dark:bg-secondaryDark rounded-lg mb-4
 }
 
 :not(pre) > code[class*="language-"] {

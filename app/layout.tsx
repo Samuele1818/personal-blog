@@ -5,7 +5,7 @@ import Footer from "../components/Footer";
 import {ReactNode} from "react";
 import '../styles/global.css'
 
-const poppins = Poppins({ weight: ["300", "400", "600", "700", "800", "900"] });
+const poppins = Poppins({ weight: ["300", "400", "600", "700"] });
 
 export default function RootLayout({
                                        children,

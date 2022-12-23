@@ -40,22 +40,22 @@
 
     .xl4-text {
         font-size: clamp(3.75rem, 2.5rem + 3.125vw, 4.5rem);
-        @apply font-black leading-snug
+        @apply leading-snug font-semibold
     }
 
     .xl3-text {
         font-size: clamp(3rem, 1.75rem + 3.125vw, 3.75rem);
-        @apply font-extrabold leading-snug
+        @apply leading-snug
     }
 
     .xl2-text {
         font-size: clamp(2.25rem, 1rem + 3.125vw, 3rem);
-        @apply font-bold leading-snug
+        @apply leading-snug
     }
 
     .xl-text {
         font-size: clamp(1.875rem, 1.25rem + 1.5625vw, 2.25rem);
-        @apply font-semibold leading-snug
+        @apply leading-snug font-bold
     }
 
     .lg-text {

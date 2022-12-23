@@ -153,6 +153,7 @@ export const Logo = (props: SVGProps<SVGSVGElement>) => (
     </svg>
 )
 
+/*
 export const Send = (props: SVGProps<SVGSVGElement>) => (
     <svg viewBox="0 0 9 9" {...props}>
         <path
@@ -161,9 +162,10 @@ export const Send = (props: SVGProps<SVGSVGElement>) => (
         />
     </svg>
 )
+*/
 
 export const ExternalLink = (props: SVGProps<SVGSVGElement>) => (
-    <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg"{...props}>
+    <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" {...props}>
             <path d="M33.406 0c-.55.05-.957.543-.906 1.094.05.55.543.957 1.094.906h12.968L25.689 22.906a1.004 1.004 0 0 0-.348 1.004c.086.371.379.664.75.75.375.086.762-.05 1.004-.348L48 3.438v12.97c-.004.359.184.695.496.878.313.18.695.18 1.008 0 .312-.183.5-.52.496-.879V0H33.406ZM2 10c-.523 0-1.059.184-1.438.563C.184 10.94 0 11.476 0 12v36c0 .523.184 1.059.563 1.438C.94 49.816 1.477 50 2 50h36c.523 0 1.059-.184 1.438-.563.378-.378.562-.914.562-1.437V18a1.006 1.006 0 0 0-.496-.879 1.01 1.01 0 0 0-1.008 0c-.312.184-.5.52-.496.879v30H2V12h30c.36.004.695-.184.879-.496a1.01 1.01 0 0 0 0-1.008c-.184-.312-.52-.5-.879-.496Z" />
     </svg>
 )
@@ -187,5 +189,18 @@ export const Moon = (props: SVGProps<SVGSVGElement>) => (
             <path
                 d="M225 441 c-140 -65 -167 -247 -52 -348 19 -17 52 -36 73 -43 38 -13 130 -8 146 8 5 5 -10 23 -33 42 -103 82 -103 212 -1 300 l46 39 -28 10 c-41 16 -106 13 -151 -8z m127 -6 c3 -3 -12 -23 -33 -45 -78 -82 -78 -198 0 -280 21 -22 36 -42 33 -45 -11 -10 -74 -4 -110 10 -157 66 -161 275 -7 346 37 17 105 25 117 14z"/>
         </g>
+    </svg>
+)
+
+export const RightArrow = (props: SVGProps<SVGSVGElement>) => (
+    <svg
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        {...props}
+    >
+            <path
+                d="M11.88 4.354a.5.5 0 0 0 0-.708L8.698.464a.5.5 0 0 0-.707.708L10.819 4 7.991 6.828a.5.5 0 1 0 .707.708l3.182-3.182ZM0 4.5h11.526v-1H0v1Z"
+                fill="currentColor"
+            />
     </svg>
 )

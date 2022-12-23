@@ -15,15 +15,15 @@ h4 {
 }
 
 h5 {
-    @apply lg-text font-semibold
+    @apply lg-text
 }
 
 h6 {
-    @apply md-text font-semibold
+    @apply md-text
 }
 
-.autolink-header {
-    @apply inline-flex ml-4
+h1, h2, h3, h4, h5, h6 {
+    @apply mb-2
 }
 
 .visually-hidden {
@@ -38,6 +38,10 @@ h6 {
     white-space: nowrap;
 }
 
+.autolink-header {
+    @apply inline-flex ml-4
+}
+
 .autolink-svg {
     @apply text-main dark:text-mainDark w-8 h-8
 }
@@ -47,23 +51,23 @@ p {
 }
 
 .toc {
-    @apply border-2 border-dark dark:border-light w-fit rounded-lg px-10 py-6 mb-12 underline underline-offset-1 text-dark dark:text-light
+    @apply border-2 border-dark dark:border-light rounded-lg px-10 py-12 mb-12 underline underline-offset-1 text-dark dark:text-light
 }
 
 .toc-link-h1 {
-    @apply md-text relative
+    @apply lg-text relative
 }
 
 .toc-link-h1::before {
     content: '#';
-    @apply font-semibold absolute text-main dark:text-mainDark -left-5 w-2 h-2
+    @apply font-semibold absolute text-main dark:text-mainDark -left-6 w-2 h-2
 }
 
 .toc-link-h2 {
-    @apply sm-text ml-5 relative
+    @apply md-text ml-5 relative
 }
 
 .toc-link-h2::before {
     content: '-';
-    @apply font-semibold absolute -left-3.5 w-2 h-2 text-main dark:text-mainDark
+    @apply font-semibold absolute -left-4 w-2 h-2 text-main dark:text-mainDark
 }
