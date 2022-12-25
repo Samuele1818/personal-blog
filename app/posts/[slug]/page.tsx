@@ -25,12 +25,6 @@ const Post = ({params}: any) => {
 
     return (
         <>
-            <head>
-                <title>
-                    {title}
-                </title>
-                <meta property="og:image" content={imageUrl}/>
-            </head>
             <article>
                 <PostHeader
                     sections={sections}
