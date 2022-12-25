@@ -1,11 +1,10 @@
-import type {NextPage} from 'next'
 import {PhilosophicIllustration, RightArrow} from '../lib/icons'
 import Card from "../components/Card";
 import { getTwoMoreRecentPost } from "../lib/utils/markdown";
 import CTALink from "../components/CTALink";
 import Link from "next/link";
 
-const Home: NextPage = () => {
+const Home = () => {
     const postMetadata = getTwoMoreRecentPost();
 
     return (

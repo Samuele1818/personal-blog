@@ -1,8 +1,7 @@
-import type {NextPage} from 'next'
 import {getPostsMetadata} from "../../lib/utils/markdown";
 import Card from "../../components/Card";
 
-const Posts: NextPage = () => {
+const Posts = () => {
     const postsMetadata = getPostsMetadata();
 
     return (

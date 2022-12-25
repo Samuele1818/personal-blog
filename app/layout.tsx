@@ -16,7 +16,7 @@ export default function RootLayout({
     return (
         <html lang='en' className={poppins.className}>
         <head>
-            <Script id="switch-theme">
+            <Script id="switch-theme" strategy="beforeInteractive">
                 {`if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
     document.documentElement.classList.add('dark')
 } else {
