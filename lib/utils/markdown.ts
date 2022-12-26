@@ -3,13 +3,13 @@ import matter from "gray-matter";
 import Metadata from "../types/post";
 
 const getPostsMetadata = (): Metadata[] => {
-  const folder = "posts/";
+  const folder = "/posts/";
   const files = fs.readdirSync(folder);
   const markdownPosts = files.filter((file) => file.endsWith(".md"));
 
   // Get gray-matter data from each file.
     return markdownPosts.map((fileName) => {
-      const fileContents = fs.readFileSync(`posts/${fileName}`, "utf8");
+      const fileContents = fs.readFileSync(`/posts/${fileName}`, "utf8");
       const matterResult = matter(fileContents);
 
       return {
@@ -25,7 +25,7 @@ const getPostsMetadata = (): Metadata[] => {
 };
 
 const getPostBySlug = (slug: string) => {
-    const folder = "posts/";
+    const folder = "/posts/";
     const file = `${folder}${slug}.md`;
     const content = fs.readFileSync(file, "utf8");
     return matter(content)
