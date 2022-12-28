@@ -1,5 +1,5 @@
 const switchTheme = () => {
-    if (localStorage.theme === 'dark') {
+    if (localStorage.theme === 'dark' || localStorage.theme == null) {
         document.documentElement.classList.remove('dark')
         localStorage.theme = "light"
     } else {
