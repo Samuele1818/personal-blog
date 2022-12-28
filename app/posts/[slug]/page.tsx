@@ -1,6 +1,6 @@
 import PostHeader from '../../../components/Post/Header'
 import PostBody from '../../../components/Post/Body'
-import {getPostBySlug} from "../../../lib/utils/markdown";
+import {getPostContentBySlug} from "../../../lib/utils/markdown";
 
 /* Cannot make page statically because of local storage access to implement dark mode
 export const generateStaticParams = async () => {
@@ -13,7 +13,7 @@ export const generateStaticParams = async () => {
 
 const Post = ({params}: any) => {
     const {slug} = params;
-    const post = getPostBySlug(slug);
+    const post = getPostContentBySlug(slug);
 
     const {
         title,

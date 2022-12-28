@@ -1,33 +1,29 @@
-import fs from 'fs'
 import matter from "gray-matter";
 import Metadata from "../types/post";
-import {getPosts} from "./staticData";
+import {getPosts, getStaticPost} from "./staticData";
 
 const getPostsMetadata = (): Metadata[] => {
-  const files = getPosts()
-  const markdownPosts = files.filter((file) => file.endsWith(".md"));
+    const files = getPosts()
+    const markdownPosts = files.filter((file) => file.endsWith(".md"));
 
-  // Get gray-matter data from each file.
+    // Get gray-matter data from each file.
     return markdownPosts.map((fileName) => {
-      const fileContents = fs.readFileSync(`/posts/${fileName}`, "utf8");
-      const matterResult = matter(fileContents);
+        const content = getPostContentBySlug(fileName)
 
-      return {
-          slug: fileName.replace(".md", ""),
-          title: matterResult.data.title,
-          date: matterResult.data.date,
-          description: matterResult.data.description,
-          imageUrl: matterResult.data.imageUrl,
-          sections: matterResult.data.sections,
-          author: matterResult.data.author
-      };
-  });
+        return {
+            slug: fileName.replace(".md", ""),
+            title: content.data.title,
+            date: content.data.date,
+            description: content.data.description,
+            imageUrl: content.data.imageUrl,
+            sections: content.data.sections,
+            author: content.data.author
+        };
+    });
 };
 
-const getPostBySlug = (slug: string) => {
-    const folder = "/posts/";
-    const file = `${folder}${slug}.md`;
-    const content = fs.readFileSync(file, "utf8");
+const getPostContentBySlug: (slug: string) => matter.GrayMatterFile<string> = (slug: string) => {
+    const content = getStaticPost(`${slug}.md`)
     return matter(content)
 };
 
@@ -42,4 +38,4 @@ const getTwoMoreRecentPost = () => {
 
 }
 
-export { getPostBySlug, getTwoMoreRecentPost, getPostsMetadata }
+export {getPostContentBySlug, getTwoMoreRecentPost, getPostsMetadata}
