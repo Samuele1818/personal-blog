@@ -3,17 +3,17 @@ import Link from 'next/link'
 import {ExternalLink, RightArrow} from "../../lib/icons";
 
 type Props = {
-    link?: string
+    href: string
     text: string
     external?: boolean
-    hash?: string
     target?: string
     className?: string
 }
 
-const CTALink: FC<Props> = ({link, text, className, hash, target, external= false}) => {
+const CTALink: FC<Props> = ({href, text, className, target, external= false}) => {
     return (
-        <Link href={{ pathname: link, hash: hash }} target={target}
+        // hash: top => fix scroll top not working when switch page
+        <Link href={href} target={target}
               className={`${className} w-fit bg-main dark:bg-mainDark fill-main text-light dark:text-dark inline-flex gap-x-2 items-center rounded-xl color-animation px-4 py-2`}>
             {text}
             {external ? <ExternalLink className="w-4 h-4 text-light dark:text-dark" /> : <RightArrow className="w-4 h-2 text-light dark:text-dark"/>}

@@ -11,7 +11,7 @@ const Card: FC<Metadata> = ({title, description, imageUrl, slug}) => {
                 <p className="sm-text line-clamp-3 mb-8">
                     {description}
                 </p>
-                <CTALink external text="See more" className="mb-0 mt-auto" link={`/posts/${slug}`}/>
+                <CTALink external text="See more" className="mb-0 mt-auto" href={`/posts/${slug}`}/>
             </div>
         </div>
     )
