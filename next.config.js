@@ -4,7 +4,10 @@ const nextConfig = {
   swcMinify: true,
   output: 'standalone',
     experimental: {
-      appDir: true
+      appDir: true,
+      fontLoaders: [
+        { loader: '@next/font/google' },
+      ],
     }
 }
 
