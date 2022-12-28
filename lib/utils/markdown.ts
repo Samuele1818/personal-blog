@@ -1,10 +1,10 @@
 import fs from 'fs'
 import matter from "gray-matter";
 import Metadata from "../types/post";
+import {getPosts} from "./staticData";
 
 const getPostsMetadata = (): Metadata[] => {
-  const folder = "/posts/";
-  const files = fs.readdirSync(folder);
+  const files = getPosts()
   const markdownPosts = files.filter((file) => file.endsWith(".md"));
 
   // Get gray-matter data from each file.
