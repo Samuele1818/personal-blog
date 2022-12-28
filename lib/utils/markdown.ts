@@ -8,7 +8,7 @@ const getPostsMetadata = (): Metadata[] => {
 
     // Get gray-matter data from each file.
     return markdownPosts.map((fileName) => {
-        const content = getPostContentBySlug(fileName)
+        const content = getPostContentBySlug(fileName.replace(".md" , ""))
 
         return {
             slug: fileName.replace(".md", ""),
