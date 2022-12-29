@@ -11,6 +11,7 @@ This blog is using [NextJs](https://nextjs.org/), [TailwindCSS](https://tailwind
 - [ ] Scroll to top when switch page
 - [ ] Scroll to #posts on home page
 - [ ] Flash on load when dark mode is enabled
+- [ ] Lightmode in codeblocks
 
 ## Updates
 
