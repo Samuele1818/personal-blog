@@ -5,7 +5,7 @@
 @layer base {
     html,
     body {
-        @apply m-0 p-0 w-full text-dark dark:text-light bg-white dark:bg-dark
+        @apply m-0 p-0 w-full text-dark dark:text-light bg-white dark:bg-dark scroll-smooth
     }
 
     svg {
