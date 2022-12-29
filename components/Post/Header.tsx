@@ -20,9 +20,9 @@ const PostHeader: FC<Props> = ({title, date, author, sections}) => {
                     <div className="w-12 h-12 rounded-full border-[1px] border-light dark:border-dark">
                         <Image
                             src={author?.picture}
-                            className="rounded-full w-full h-full"
-                            width="1"
-                            height="1"
+                            className="rounded-full w-full h-full bg-center"
+                            width="120"
+                            height="120"
                             alt={author?.name}/>
                     </div>
                     <div className="flex flex-col">
