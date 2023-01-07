@@ -23,7 +23,7 @@ const Header: FC = () => {
     return (
         <header className="inline-flex items-center justify-between w-full layout pt-12">
             <Link href="/" className="inline-flex items-center gap-x-2">
-                <Logo className="w-12 h-12 text-main dark:text-mainDark"/>
+                <Logo className="hidden md:block w-12 h-12 text-main dark:text-mainDark"/>
                 <p className="font-extrabold lg-text text-main dark:text-mainDark">FreeBounds</p>
             </Link>
             <div className="inline-flex items-center gap-x-4">
