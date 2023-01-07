@@ -17,7 +17,8 @@ const getPostsMetadata = (): Metadata[] => {
             description: content.data.description,
             imageUrl: content.data.imageUrl,
             sections: content.data.sections,
-            author: content.data.author
+            author: content.data.author,
+            tags: content.data.tags
         };
     });
 };

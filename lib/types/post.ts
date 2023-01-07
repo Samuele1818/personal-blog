@@ -13,6 +13,7 @@ type Metadata = {
   author: Author
   imageUrl: string
   sections: Section[]
+  tags: string[]
 }
 
 export type { Section } 

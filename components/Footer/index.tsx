@@ -9,7 +9,7 @@ const Footer: FC = () => {
 
           </div>
         </div>
-        <h1 className="center lg-text mt-24">Copyright © {new Date().getFullYear()} SC</h1>
+        <h1 className="center lg-text mt-24">Copyright © {new Date().getFullYear()} FreeBounds</h1>
       </footer>
   )
 }

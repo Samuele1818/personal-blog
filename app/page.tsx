@@ -11,8 +11,8 @@ const Home = () => {
         <>
             <section className="flex flex-col lg:flex-row">
                 <div className="flex-col flex lg:max-w-[400px] xl:max-w-[450px] 2xl:max-w-[600px] hr-align-lg">
-                    <h1 className="xl-text">Read blog articles about</h1>
-                    <h2 className="lg-text mt-4">In this blog you can find</h2>
+                    <h1 className="xl-text">Read interesting articles written by interesting people</h1>
+                    <h2 className="lg-text mt-4">NoBounds is a blog on you can read articles on a variety of topics</h2>
                     <CTALink href="#posts"
                          className="mt-8 hr-align-lg font-bold px-6 p-4"
                          text="View posts"/>

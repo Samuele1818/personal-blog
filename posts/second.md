@@ -5,6 +5,9 @@ date: "2022-10-16"
 author:
   name: Samuele Sciatore
   picture: "/assets/blog/authors/ss.jpg"
+tags:
+  - Test
+  - Test2
 imageUrl: "https://picsum.photos/400/200"
 ---
 
