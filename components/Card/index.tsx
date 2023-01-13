@@ -5,7 +5,7 @@ import Tag from "../Post/Tag";
 
 const Card: FC<Metadata> = ({title, description, imageUrl, slug, tags}) => {
     return (
-        <div className="min-h-fit flex flex-col break-words whitespace-pre-wrap rounded-lg shadow-shadow bg-white dark:bg-secondaryDark text-dark dark:text-light">
+        <div className="min-h-fit flex flex-col flex-1 min-w-0 break-words whitespace-pre-wrap rounded-lg shadow-shadow bg-white dark:bg-secondaryDark text-dark dark:text-light">
             <img className="rounded-t-lg bg-cover w-full h-fit max-h-52" src={imageUrl} alt={slug}/>
             <div className="flex flex-col px-6 py-4 h-full">
                 <h5 className="lg-text font-medium mb-4">{title}</h5>

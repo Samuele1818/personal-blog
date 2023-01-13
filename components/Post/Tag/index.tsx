@@ -6,8 +6,8 @@ type Props = {
 
 const Tag: FC<Props> = ({tag}) => {
     return (
-        <div className="bg-transparent border-2 border-third px-2 rounded-lg cursor-pointer">
-            {tag}
+        <div className="bg-transparent border-[0.5px] border-third px-2 rounded-lg cursor-pointer">
+            # {tag}
         </div>
     )
 }
