@@ -4,8 +4,8 @@ description: "Still don't explain why I have the need to be an evil and at the s
 self"
 date: "2023-01-07"
 author:
-   name: Cody
-   picture: "/assets/blog/authors/cody.jpg"
+  name: Cody
+  picture: "/assets/blog/authors/cody.jpg"
 tags:
   - Reflection
   - Pain

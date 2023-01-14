@@ -39,11 +39,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .autolink-header {
-    @apply inline-flex ml-4
+    @apply inline-flex items-center
 }
 
-.autolink-svg {
-    @apply text-main dark:text-mainDark w-8 h-8
+.autolink-header:hover::after {
+    content: "#";
+    @apply ml-4 block text-main dark:text-mainDark text-[0.8em]
 }
 
 p {
